@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Wizard</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<header>
+    <h1>Prompt Wizard</h1>
+</header>
+<body>
+
+    <form id="prompt-form">
+        <h2 class="header-two">Enter Keywords:</h2>
+        <label for="prompt"></label>
+        <input type="text" id="prompt" name="prompt">
+        <button id="generate-prompt-button">Generate Prompt</button>
+        <link rel="stylesheet" href="style.css">
+    </form>
+
+    <div id="convo-section">
+        <h2 class="header-two">Generated Prompt:</h2>
+        <form id="convo-form">
+            <label for="convo"></label>
+            <textarea name="convo" id="convo" rows="4" cols="50">
+            </textarea><br>
+            <div id="buttons-container">
+                <button id="generate-convo-button">Generate Conversation</button>
+                <button id="view-prompt-history">View History</button>
+            </div>
+            <div class="spinner" id="loadingSpinner"></div>
+        </form>
+    </div>
+
+    <div id="convo-response">
+        <h2 class="header-two">Generated Conversation:</h2>
+        <div id="convo-content-container"></div>
+    </div>
+
+    <div id="prompt-history-container"></div>
+
+</body>
+<script src="script.js"></script>
+<footer>
+    <p>&copy; 2023 Your Company Name. All Rights Reserved.</p>
+</footer>
+</html>
